@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
+body {
+  font-size: 62.5%; }
+
+@media only screen and (min-width: 20em) {
+  .index-page-main {
+    height: 100%;
+    margin: 0 5%;
+    text-align: center; }
+    .index-page-main img {
+      position: relative;
+      top: 20vh;
+      width: 50%; }
+    .index-page-main .gotoBtn {
+      position: relative;
+      top: 30vh;
+      display: block;
+      padding: 5px;
+      font-family: "Lato", sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 4px;
+      color: #3498db;
+      border-bottom: 2px solid #3498db;
+      text-decoration: none;
+      text-transform: uppercase; }
+    .index-page-main .learnmoreBtn {
+      position: absolute;
+      bottom: 10px;
+      display: block;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      font-family: "Lato", sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      text-decoration: none;
+      color: #3498db; } }
+@media only screen and (min-width: 48em) {
+  .index-page-main img {
+    width: 20%; }
+  .index-page-main .gotoBtn {
+    width: 40%;
+    margin: 0 auto;
+    top: 35vh;
+    padding: 15px; } }
+@media only screen and (min-width: 64em) {
+  .index-page-main img {
+    width: 10%; }
+  .index-page-main .gotoBtn {
+    width: 40%;
+    margin: 0 auto;
+    top: 35vh;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to top, #3498db 50%, transparent 50%);
+    -webkit-transition: background-position 0.25s;
+    -moz-transition: background-position 0.25s;
+    transition: background-position 0.25s; }
+    .index-page-main .gotoBtn:hover {
+      background-position: -100% 100%;
+      color: #FFFFFF; } }
+@media only screen and (min-width: 20em) {
+  .dashboard-page-main {
+    text-align: center;
+    margin: 10% 5%; }
+    .dashboard-page-main img {
+      width: 20%; }
+    .dashboard-page-main .dashboard-form {
+      position: relative;
+      top: 5vh;
+      font-family: "Lato", sans-serif;
+      font-size: 1rem; }
+      .dashboard-page-main .dashboard-form label {
+        position: relative;
+        top: 5vh;
+        text-transform: uppercase;
+        letter-spacing: 3px; }
+        .dashboard-page-main .dashboard-form label input {
+          padding-left: 5%;
+          width: 95%;
+          height: 7vh;
+          margin-top: 5px;
+          border: 0;
+          border-bottom: 2px solid #3498db;
+          background-size: 100% 200%;
+          background-image: linear-gradient(to top, #4aa3df 50%, transparent 50%);
+          -webkit-transition: background-position 0.25s;
+          -moz-transition: background-position 0.25s;
+          transition: background-position 0.25s; }
+          .dashboard-page-main .dashboard-form label input:focus {
+            background-position: -100% 100%;
+            color: #FFFFFF; }
+      .dashboard-page-main .dashboard-form input[type="submit"] {
+        margin-top: 10vh;
+        width: 100%;
+        height: 7vh;
+        border: 0;
+        background-color: #2ecc71;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-family: "Lato", sans-serif;
+        text-transform: uppercase; }
+    .dashboard-page-main .charttype-block {
+      position: relative;
+      top: 10vh; }
+      .dashboard-page-main .charttype-block .title {
+        font-family: "Lato", sans-serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px; }
+
+  canvas {
+    position: relative;
+    top: 16vh;
+    background: rgba(193, 193, 193, 0.5);
+    height: 400px;
+    width: 80%;
+    padding: 5% 3%; } }
+@media only screen and (min-width: 48em) {
+  .dashboard-page-main {
+    text-align: center;
+    margin: 5%; }
+    .dashboard-page-main canvas {
+      width: 80%; } }
+@media only screen and (min-width: 64em) {
+  .dashboard-page-main {
+    text-align: center;
+    margin: 5%; }
+    .dashboard-page-main img {
+      width: 10%; }
+    .dashboard-page-main .dashboard-form label input {
+      padding-left: 5%;
+      width: 30%; }
+    .dashboard-page-main .dashboard-form input[type="submit"] {
+      display: block;
+      margin: 10vh auto 0;
+      width: 42%; } }
+
+/*# sourceMappingURL=app.css.map */

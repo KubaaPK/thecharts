@@ -1,0 +1,82 @@
+@media only screen and (min-width : 20em)
+  .index-page-main
+    height: 100%
+    margin: 0 5%
+
+    text-align: center
+
+    img
+      position: relative
+      top: 20vh
+
+      width: 50%
+
+    .gotoBtn
+      position: relative
+      top: 30vh
+      display: block
+      padding: 5px
+
+      font-family: $lato
+      font-size: 1rem
+      font-weight: 600
+      letter-spacing: 4px
+
+      color: $primary
+      border-bottom: 2px solid $primary
+
+      text-decoration: none
+      text-transform: uppercase
+
+
+    .learnmoreBtn
+      position: absolute
+      bottom: 10px
+      display: block
+      margin: 0 auto
+      left: 0
+      right: 0
+
+      font-family: $lato
+      font-size: 1rem
+      font-weight: 400
+
+      text-decoration: none
+
+      color: $primary
+
+
+
+@media only screen and (min-width : 48em)
+  .index-page-main
+    img
+      width: 20%
+
+    .gotoBtn
+      width: 40%
+      margin: 0 auto
+      top: 35vh
+      padding: 15px
+
+
+
+@media only screen and (min-width : 64em)
+  .index-page-main
+    img
+      width: 10%
+
+    .gotoBtn
+      width: 40%
+      margin: 0 auto
+      top: 35vh
+
+      background-size: 100% 200%
+      background-image: linear-gradient(to top, $primary 50%, transparent 50%)
+      -webkit-transition: background-position 0.25s
+      -moz-transition: background-position 0.25s
+      transition: background-position 0.25s
+
+
+      &:hover
+        background-position: -100% 100%
+        color: #FFFFFF

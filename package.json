@@ -1,0 +1,16 @@
+{
+  "name": "thecharts",
+  "version": "1.0.0",
+  "description": "Charts visualization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jakub Szkowrytko",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-ui-router": "^0.2.18",
+    "chartjs": "^0.3.23"
+  }
+}

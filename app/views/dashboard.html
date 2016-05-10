@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Charts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+  </head>
+
+  <body ng-app = "thecharts">
+    <main class="dashboard-page-main animated fadeIn" ng-controller="chartController">
+      <img src="../../assets/img/logo.png" alt="Logo" /><br>
+      <form class="dashboard-form" id="dashboard-form">
+        <label for="form-input-labels">Labels
+          <input type="text" placeholder="January, February, March, April" id="form-input-labels" ng-model="label" required="">
+        </label><br><br>
+        <label for="form-input-data">Data &nbsp;
+          <input type="text" placeholder="12, 25, 26, 74" id="form-input-data" ng-model="data" required="">
+        </label>
+      </form>
+
+      <div class="charttype-block">
+        <p class="title">Pick a chart type</p>
+        <img src="../../assets/img/radar.png" alt="Radar Chart" ng-click="setradarchart()" />
+        <img src="../../assets/img/barchart.png" alt="Bar Chart" ng-click="setbarchart()" />
+        <img src="../../assets/img/linechart.png" alt="Line Chart" ng-click="setlinechart()" />
+      </div>
+
+      <div id="canvaswrapper"></div>
+    </main>
+
+    <script src="http://www.chartjs.org/assets/Chart.js" charset="utf-8"></script>
+    <script src="../../node_modules/angular/angular.min.js" charset="utf-8"></script>
+    <script src="../app.js" charset="utf-8"></script>
+    <script src="../controllers/chartController.js" charset="utf-8"></script>
+  </body>
+</html>
+
